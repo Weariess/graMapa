@@ -1,0 +1,53 @@
+body{
+    margin: 0px;
+display: grid;
+grid-template-areas:
+"map menu";
+grid-template-columns: 80% 20%;
+grid-template-rows: 100vh;
+}
+
+
+#map{
+    grid-area: map;
+}
+
+
+#menu{
+    grid-area: menu;
+display: grid;
+grid-template-areas:
+"gora"
+"dol";
+grid-template-columns: 100%;
+grid-template-rows: 50vh 50vh;
+
+}
+#dol{
+border: 1px solid black;
+font-size: 50px;
+
+display: grid;
+grid-template-areas:
+"woj"
+"punkty";
+
+grid-template-columns: 100%;
+grid-template-rows: 25vh 25vh;
+}
+
+#woj{
+    grid-area: woj;
+
+}
+
+#punkty{
+    grid-area: punkty;
+
+}
+
+
+
+#odp{
+font-size: 50px;
+}
