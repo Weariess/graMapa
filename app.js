@@ -18,11 +18,11 @@ var points=0
 
 function start(){
      licz=liczba()
-    const dol=document.getElementById('woj')
+    var woj=document.getElementById('woj')
     
     var wojewodztwo=wojewodztwa.features[licz].properties.nazwa
     
-    dol.innerHTML=wojewodztwo
+    woj.innerHTML=wojewodztwo
     //console.log(wojewodztwo)
 }
 
@@ -41,17 +41,22 @@ console.log(wybrane)
             document.getElementById('odp').innerHTML='dobrze'
             console.log("dobrze")
             points=points+1
-            document.getElementById('punkty').innerHTML=points
+            document.getElementById('punkty').innerHTML="punkty: "+points
+            marker(e.latlng)
             start()
 
         }
 else{ 
     document.getElementById('odp').innerHTML='źle'
     console.log("źle")
+    marker(e.latlng)
 
 
 start()
 }   
+function marker(latlng){
+    L.marker(latlng).addTo(map)
+}
 
 document.getElementById("gora").innerHTML=""
 })      
