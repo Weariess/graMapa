@@ -42,7 +42,7 @@ console.log(wybrane)
             console.log("dobrze")
             points=points+1
             document.getElementById('punkty').innerHTML="punkty: "+points
-            marker(e.latlng)
+            //marker(e.latlng)
             start()
 
         }
@@ -50,6 +50,7 @@ else{
     document.getElementById('odp').innerHTML='źle'
     console.log("źle")
     marker(e.latlng)
+    //var marker2 = L.marker([51.5, -0.09]).addTo(map);
 
 
 start()
