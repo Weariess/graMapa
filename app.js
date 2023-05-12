@@ -23,6 +23,7 @@ function start(){
     var wojewodztwo=wojewodztwa.features[licz].properties.nazwa
     
     dol.innerHTML=wojewodztwo
+    //console.log(wojewodztwo)
 }
 
 var warstwa=[]
@@ -38,17 +39,20 @@ console.log(wybrane)
 
         if(wybrane==wojewodztwa.features[licz].properties.nazwa){
             document.getElementById('odp').innerHTML='dobrze'
+            console.log("dobrze")
             points=points+1
             document.getElementById('punkty').innerHTML=points
+            start()
 
         }
 else{ 
     document.getElementById('odp').innerHTML='źle'
-
+    console.log("źle")
 
 
 start()
 }   
 
+document.getElementById("gora").innerHTML=""
 })      
 }

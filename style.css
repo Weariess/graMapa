@@ -20,7 +20,7 @@ grid-template-areas:
 "gora"
 "dol";
 grid-template-columns: 100%;
-grid-template-rows: 50vh 50vh;
+grid-template-rows: 10vh 90vh;
 
 }
 #dol{
@@ -30,10 +30,11 @@ font-size: 50px;
 display: grid;
 grid-template-areas:
 "woj"
-"punkty";
+"punkty"
+"odp";
 
 grid-template-columns: 100%;
-grid-template-rows: 25vh 25vh;
+grid-template-rows: 25vh 25vh 25vh;
 }
 
 #woj{
